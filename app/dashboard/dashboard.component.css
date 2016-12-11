@@ -1,0 +1,65 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+.card {
+  border: 1px solid #1b2431;
+  border-radius: 8px; 
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+}
+
+.card .glyphicon {
+    font-size: 28px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    opacity: 0.3;
+}
+
+.card .stat {
+    border-top: 1px solid rgba(red, green, blue, 0.3);
+    padding: 10px 10px 0;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.card .title {
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 10px 0;
+}
+
+.card .value {
+    font-size: 26px;
+    font-weight: lighter;
+    padding: 0 10px;
+}
+
+.card.blue {
+    background-color: #2298F1; 
+}
+
+.card.green {
+    background-color: #66B92E; 
+
+}
+
+.card.orange {
+    background-color: #DA932C; 
+
+}
+
+.card.red {
+    background-color: #D65B4A; 
+}
+
+
+

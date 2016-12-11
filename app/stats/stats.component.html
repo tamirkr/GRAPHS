@@ -1,0 +1,28 @@
+<div [@flyInOut]="'in'" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!--<div class="form-group" [class.has-error]="hasError">
+                <select class="form-control" name="currency" #c (blur)="validateCurrency(c.value)" (change)="onchange(c.value)">
+                    <option value="default">Select</option>
+                    <option *ngFor="let curr of currency" [value]="curr.name">{{curr.name}}</option>
+                </select>
+            </div>-->
+            <div class="dropdown">
+                <span  [style.cursor]="'pointer'" class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Currency
+                <span class="caret"></span>
+                </span>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
+                    <li *ngFor="let curr of currency" (click)="onchange(curr.name)"><a [style.cursor]="'pointer'">{{curr.name}}</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 ">
+            <chart [options]="options">
+                <series></series>
+            </chart>
+        </div>
+    </div>
+</div>

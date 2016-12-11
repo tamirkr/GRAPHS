@@ -1,0 +1,48 @@
+<aside [@slideInOut]="menuState">
+    <header>
+        <div>
+            <img src="http://source.unsplash.com/random/55x55" class="profile-picture" />
+            <p>John Doe</p>
+        </div>
+        <span class="fa fa-bars" (click)="toggle()"></span>
+    </header>
+    <nav class="side-navigation">
+        <ul>
+            <li class="active">
+                <a routerLink="/dashboard"><i class="fa fa-dashboard"></i>Dashboard</a>
+            </li>
+            <li>
+                <a routerLink="/projects"> <i class="fa fa-ship"></i>Projects</a>
+            </li>
+            <li><a href="#"><i class="fa fa-users"></i>Users</a></li>
+            <li><a href="#"><i class="fa fa-comments"></i>Comments</a></li>
+            <li>
+                <a routerLink="/stats"><i class="fa fa-area-chart"></i>Stats</a>
+            </li>
+        </ul>
+    </nav>
+
+</aside>
+<main >
+    <header class="main-head">
+        <nav>
+            <ul>
+                <li class="first"> <a href="#"><i class="fa fa-user-md"></i></a>
+                </li>
+                <li class="first"> <a href="#"><i class="fa fa-comments-o"></i></a>
+
+                </li>
+                <li class="first"> <a href="#"><i class="fa fa-bell-o"><span class="number-alert">3</span></i></a>
+                </li>
+                <li highlightLogo class="middle"> <a href="#"><i myHighlight class="fa fa-money"></i></a>
+                </li>
+                <li class="search">
+                    <input type="text" name="search" placeholder="Type here to search..." autocomplete="off" />
+                    <i class="fa fa-search"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <router-outlet></router-outlet>
+
+</main>
